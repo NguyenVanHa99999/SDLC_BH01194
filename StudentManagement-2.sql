@@ -189,11 +189,11 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`UserID`, `Username`, `Password`, `FirstName`, `LastName`, `Email`, `Phone`, `RoleID`, `CreatedAt`) VALUES
-(9, 'nguyenvanhâdmin', '$2y$10$3rYGfud4kuLgrCOcJ9nY6.fM5GJAaj04RVIXmZSu9zCFxE7ID8xzi', 'nguyenvan', 'ha1', 'nguyenvanha1@gmail.com', NULL, 1, '2024-12-03 16:50:56'),
-(36, 'nguyenvanha', '$2y$10$lCGhXeqwsmhzloapwm02v.M6jmxR9S2SGCd5Ec.X1rWxtXhcAF7fO', 'nguyenvan', 'ha34', 'nguyenvanha@gmaij.com', NULL, 2, '2024-12-03 18:08:09'),
-(37, 'fadad', '$2y$10$VQqGDX9nWmUMp0ycZrwpveiPMZiwwH4u5.ngGtwpvl7B4IsZt79ai', 'van', 'ha45', 'nguyenvana@gmail.com', NULL, 2, '2024-12-03 22:06:10'),
-(38, 'nguyenvanhateachẻ', '$2y$10$Yw1METkdqpZa2w4NVAHgC.5vig6ojFWZjfrYdkm3OvRteCD2EkXgi', 'nguyenvan', 'ha2', 'nguyenvanha2@gmail.com', NULL, 2, '2024-12-03 22:11:34'),
-(39, 'nguyenvanhastudent', '$2y$10$sRj7bDFv9YgxpKV/k/Y61OhZOR6vzrg79ZQ10/eEkwOky7tDzYRL2', 'nguyenvan', 'ha3', 'nguyenvanha3@gmail.com', NULL, 3, '2024-12-03 23:57:38');
+(9, 'nguyenvanhâdmin', '$2y$10$3rYGfud4kuLgrCOcJ9nY6.fM5GJAaj04RVIXmZSu9zCFxE7ID8xzi', 'nguyenvan', 'ha1', 'nguyenvanha1@gmail.com', 141414421, 1, '2024-12-03 16:50:56'),
+(36, 'nguyenvanha', '$2y$10$lCGhXeqwsmhzloapwm02v.M6jmxR9S2SGCd5Ec.X1rWxtXhcAF7fO', 'nguyenvan', 'ha34', 'nguyenvanha@gmaij.com', 421412414, 2, '2024-12-03 18:08:09'),
+(37, 'fadad', '$2y$10$VQqGDX9nWmUMp0ycZrwpveiPMZiwwH4u5.ngGtwpvl7B4IsZt79ai', 'van', 'ha45', 'nguyenvana@gmail.com', 41241241, 2, '2024-12-03 22:06:10'),
+(38, 'nguyenvanhateachẻ', '$2y$10$Yw1METkdqpZa2w4NVAHgC.5vig6ojFWZjfrYdkm3OvRteCD2EkXgi', 'nguyenvan', 'ha2', 'nguyenvanha2@gmail.com', 412412414, 2, '2024-12-03 22:11:34'),
+(39, 'nguyenvanhastudent', '$2y$10$sRj7bDFv9YgxpKV/k/Y61OhZOR6vzrg79ZQ10/eEkwOky7tDzYRL2', 'nguyenvan', 'ha3', 'nguyenvanha3@gmail.com', 41421414, 3, '2024-12-03 23:57:38');
 
 --
 -- Chỉ mục cho các bảng đã đổ
