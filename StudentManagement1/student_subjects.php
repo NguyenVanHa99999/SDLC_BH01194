@@ -21,11 +21,14 @@ $sql = "
     SELECT 
         sub.SubjectName,
         c.ClassName,
-        CONCAT(u.FirstName, ' ', u.LastName) AS TeacherName
+        CONCAT(u.FirstName, ' ', u.LastName) AS TeacherName,
+        s.StartTime,
+        s.EndTime
     FROM ClassStudents cs
     INNER JOIN Classes c ON cs.ClassID = c.ClassID
     INNER JOIN Subjects sub ON c.ClassID = sub.SubjectID
     LEFT JOIN Users u ON sub.TeacherID = u.UserID
+    LEFT JOIN Sessions s ON s.ClassID = c.ClassID AND s.SubjectID = sub.SubjectID
     WHERE cs.UserID = $userId
     ORDER BY c.ClassName, sub.SubjectName
 ";
@@ -62,10 +65,11 @@ $result = $conn->query($sql);
             <table class="table table-bordered table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <thead style="background-color: black; color: white;">
                         <th>Subject</th>
                         <th>Class</th>
                         <th>Teacher</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -74,6 +78,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['SubjectName']; ?></td>
                             <td><?php echo $row['ClassName']; ?></td>
                             <td><?php echo $row['TeacherName']; ?></td>
+                            <td><?php echo $row['StartTime']; ?></td>
+                            <td><?php echo $row['EndTime']; ?></td>
                         </tr>
                     <?php } ?>
                 </tbody>
